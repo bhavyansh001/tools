@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Flux8Labs Tools is a dark, fast directory of browser-first utilities, AI experiments, web scanners, and internal infrastructure from Flux8Labs."
+    />
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta property="og:title" content="Flux8Labs Tools" />
+    <meta
+      property="og:description"
+      content="Every Flux8Labs tool in one place: file utilities, web scanners, AI tools, and internal infrastructure."
+    />
+    <meta property="og:type" content="website" />
+    <title>Flux8Labs Tools</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="hero">
+        <nav class="topbar" aria-label="Primary navigation">
+          <a class="brand" href="https://flux8labs.com" target="_blank" rel="noreferrer">
+            <span class="brand-mark" aria-hidden="true">F8</span>
+            <span>Flux8Labs</span>
+          </a>
+          <div class="nav-links">
+            <a href="https://flux8labs.com" target="_blank" rel="noreferrer">Studio</a>
+            <a href="https://github.com/bhavyansh001" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy" aria-labelledby="page-title">
+            <div class="eyebrow">Tools directory</div>
+            <h1 id="page-title">Flux8Labs Tools</h1>
+            <p class="hero-lede">
+              Every tool we have built, in one place. Free utilities, AI experiments,
+              and internal infrastructure from a small team that prefers shipping over
+              talking.
+            </p>
+            <div class="hero-actions" aria-label="Site highlights">
+              <span>Built lean</span>
+              <span>Works in your browser</span>
+              <span>Made in Jaipur</span>
+            </div>
+          </section>
+
+          <aside class="privacy-panel" aria-label="Privacy promise">
+            <div class="panel-kicker">Privacy-first by default</div>
+            <p>
+              Most tools run entirely in your browser. No uploads. No tracking. Your
+              data stays yours.
+            </p>
+            <div class="signal-grid" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+              <span></span><span></span><span></span><span></span>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="controls" aria-label="Tool filters">
+          <div class="controls-inner">
+            <div class="filter-row" role="tablist" aria-label="Categories">
+              <button class="filter-pill is-active" type="button" data-filter="All" role="tab" aria-selected="true">
+                All
+              </button>
+              <button class="filter-pill" type="button" data-filter="File Tools" role="tab" aria-selected="false">
+                File Tools
+              </button>
+              <button class="filter-pill" type="button" data-filter="Web Tools" role="tab" aria-selected="false">
+                Web Tools
+              </button>
+              <button class="filter-pill" type="button" data-filter="AI Tools" role="tab" aria-selected="false">
+                AI Tools
+              </button>
+              <button class="filter-pill" type="button" data-filter="Internal" role="tab" aria-selected="false">
+                Internal
+              </button>
+            </div>
+
+            <label class="search-box">
+              <span class="search-icon" aria-hidden="true"></span>
+              <span class="sr-only">Search tools</span>
+              <input id="tool-search" type="search" placeholder="Search tools" autocomplete="off" />
+            </label>
+          </div>
+        </section>
+
+        <section class="directory" aria-labelledby="directory-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Directory</p>
+              <h2 id="directory-title">Built to work, not to impress.</h2>
+            </div>
+            <p id="result-count">8 tools</p>
+          </div>
+
+          <div class="tool-grid" id="tool-grid">
+            <article class="tool-card reveal" data-category="File Tools" data-search="gopdf pdf convert edit merge split compress browser no uploads privacy">
+              <div class="card-topline">
+                <span class="category-badge">File Tools</span>
+                <span class="status-badge">Privacy-first</span>
+              </div>
+              <div class="tool-icon pdf" aria-hidden="true">PDF</div>
+              <h3>GoPDF</h3>
+              <p class="tagline">Free online PDF tools for convert, edit, merge, and more.</p>
+              <p class="description">
+                A browser-based PDF suite for merging, splitting, compressing, and converting files.
+                No installation, no server uploads, just local processing.
+              </p>
+              <div class="meta-row">
+                <span>No uploads</span>
+                <span>Local files</span>
+              </div>
+              <a class="open-link" href="https://gopdf.run" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card reveal" data-category="File Tools" data-search="goimg image webp avif resize crop compress batch no uploads privacy">
+              <div class="card-topline">
+                <span class="category-badge">File Tools</span>
+                <span class="status-badge">Privacy-first</span>
+              </div>
+              <div class="tool-icon img" aria-hidden="true">IMG</div>
+              <h3>GoIMG</h3>
+              <p class="tagline">Free online image tools to optimize, convert, and edit images.</p>
+              <p class="description">
+                Convert images to WebP or AVIF, resize, crop, and compress with batch workflows
+                that keep source files on your device.
+              </p>
+              <div class="meta-row">
+                <span>No uploads</span>
+                <span>Batch ready</span>
+              </div>
+              <a class="open-link" href="https://goimg.run" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card reveal" data-category="File Tools" data-search="govid video compressor ffmpeg wasm mp4 mov avi mkv webm privacy no uploads">
+              <div class="card-topline">
+                <span class="category-badge">File Tools</span>
+                <span class="status-badge">FFmpeg WASM</span>
+              </div>
+              <div class="tool-icon vid" aria-hidden="true">VID</div>
+              <h3>GoVid</h3>
+              <p class="tagline">Free video compressor. No uploads.</p>
+              <p class="description">
+                Compress MP4, MOV, AVI, MKV, and WebM directly in the browser with FFmpeg
+                via WebAssembly. Your video never leaves your device.
+              </p>
+              <div class="meta-row">
+                <span>No uploads</span>
+                <span>WASM powered</span>
+              </div>
+              <a class="open-link" href="https://govid.flux8labs.com" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card reveal" data-category="Web Tools" data-search="flux8seo seo audit website checker ranking factors meta open graph speed structured data sitemap">
+              <div class="card-topline">
+                <span class="category-badge">Web Tools</span>
+                <span class="status-badge">47 checks</span>
+              </div>
+              <div class="tool-icon seo" aria-hidden="true">SEO</div>
+              <h3>Flux8SEO</h3>
+              <p class="tagline">Free SEO audit tool and website SEO checker.</p>
+              <p class="description">
+                Scan any URL for an instant report across meta tags, Open Graph, speed signals,
+                structured data, sitemap health, and ranking fundamentals.
+              </p>
+              <div class="meta-row">
+                <span>No signup</span>
+                <span>Instant scan</span>
+              </div>
+              <a class="open-link" href="https://seo.flux8labs.com" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card reveal" data-category="Web Tools" data-search="flux8shield security headers vulnerability scanner ssl tls env cors cookie passive scans">
+              <div class="card-topline">
+                <span class="category-badge">Web Tools</span>
+                <span class="status-badge">Passive only</span>
+              </div>
+              <div class="tool-icon shield" aria-hidden="true">SEC</div>
+              <h3>Flux8Shield</h3>
+              <p class="tagline">Free security headers and vulnerability scanner.</p>
+              <p class="description">
+                Paste a URL and get a security score in seconds across headers, SSL/TLS,
+                exposed files, CORS, cookie flags, and more. No exploits sent.
+              </p>
+              <div class="meta-row">
+                <span>40+ checks</span>
+                <span>3 free scans/day</span>
+              </div>
+              <a class="open-link" href="https://security.flux8labs.com" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card reveal" data-category="AI Tools" data-search="flux8 ai chat image generation byo key local inference pwa private offline">
+              <div class="card-topline">
+                <span class="category-badge">AI Tools</span>
+                <span class="status-badge">BYO-Key</span>
+              </div>
+              <div class="tool-icon ai" aria-hidden="true">AI</div>
+              <h3>Flux8 AI</h3>
+              <p class="tagline">AI chat and image generation with your keys, model, and privacy.</p>
+              <p class="description">
+                A polished chat and image interface for your own API keys, with local inference
+                support, installable PWA behavior, and private conversations.
+              </p>
+              <div class="meta-row">
+                <span>Local AI</span>
+                <span>PWA</span>
+              </div>
+              <a class="open-link" href="https://ai.flux8labs.com" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card lab-card reveal" data-category="AI Tools" data-search="zoro ai experimental voice assistant teacher meeting interview groq enrollment realtime">
+              <div class="card-topline">
+                <span class="category-badge">AI Tools</span>
+                <span class="status-badge lab">Lab</span>
+              </div>
+              <div class="tool-icon zoro" aria-hidden="true">Z</div>
+              <h3>Zoro AI</h3>
+              <p class="tagline">Listens to the teacher. Ignores your voice. Answers in real time.</p>
+              <p class="description">
+                A voice-aware assistant for one-on-one meetings and interviews. Enroll your voice
+                once, then Zoro responds to the other person speaking.
+              </p>
+              <div class="meta-row">
+                <span>Groq</span>
+                <span>Experimental</span>
+              </div>
+              <a class="open-link" href="https://flux8labs-zoro.hf.space" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+
+            <article class="tool-card internal-card reveal" data-category="Internal" data-search="slate gst invoicing sow statement of work localstorage export client management early access">
+              <div class="card-topline">
+                <span class="category-badge">Internal</span>
+                <span class="status-badge internal">Early Access</span>
+              </div>
+              <div class="tool-icon slate" aria-hidden="true">SLT</div>
+              <h3>Slate</h3>
+              <p class="tagline">GST-ready invoicing and SOW generation, private by design.</p>
+              <p class="description">
+                Flux8Labs' browser-first invoicing and Statement of Work tool. Handles clients,
+                GST invoices, and exports while keeping data in localStorage.
+              </p>
+              <div class="meta-row">
+                <span>Exportable</span>
+                <span>Data stays local</span>
+              </div>
+              <a class="open-link" href="https://slate.flux8labs.com" target="_blank" rel="noreferrer">Open Tool <span aria-hidden="true">-></span></a>
+            </article>
+          </div>
+
+          <div class="empty-state" id="empty-state" hidden>
+            <p>No matching tools found.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>
+          <strong>Flux8Labs</strong>
+          <p>A digital agency from Jaipur, India.</p>
+        </div>
+        <div class="footer-links">
+          <a href="https://flux8labs.com" target="_blank" rel="noreferrer">flux8labs.com</a>
+          <a href="https://github.com/bhavyansh001" target="_blank" rel="noreferrer">github.com/bhavyansh001</a>
+          <a href="https://medium.com/@bhavyansh001" target="_blank" rel="noreferrer">medium.com/@bhavyansh001</a>
+        </div>
+        <p class="copyright">(c) 2025-26 Flux8Labs</p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
