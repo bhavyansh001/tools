@@ -129,6 +129,52 @@ input {
   font-size: 0.94rem;
 }
 
+.profile-menu {
+  position: relative;
+}
+
+.profile-menu-panel {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  min-width: 190px;
+  display: grid;
+  gap: 4px;
+  padding: 8px;
+  border: 1px solid var(--line);
+  background: rgba(20, 19, 18, 0.98);
+  box-shadow: 0 18px 52px rgba(0, 0, 0, 0.34);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-4px);
+  transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.profile-menu-panel::before {
+  content: "";
+  position: absolute;
+  inset: -12px 0 auto;
+  height: 12px;
+}
+
+.profile-menu-panel a {
+  display: block;
+  padding: 9px 10px;
+  color: #d9d0c3;
+  white-space: nowrap;
+}
+
+.profile-menu-panel a:hover {
+  background: var(--amber-soft);
+}
+
+.profile-menu:hover .profile-menu-panel,
+.profile-menu:focus-within .profile-menu-panel {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .nav-links a,
 .footer-links a {
   transition: color 180ms ease;
@@ -567,6 +613,15 @@ h1 {
 .footer-links {
   justify-content: flex-end;
   gap: 16px;
+}
+
+.footer-profile-menu .profile-menu-panel {
+  top: auto;
+  bottom: calc(100% + 10px);
+}
+
+.footer-profile-menu .profile-menu-panel::before {
+  inset: auto 0 -12px;
 }
 
 .copyright {
