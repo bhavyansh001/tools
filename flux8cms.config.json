@@ -1,0 +1,20 @@
+{
+  "site": "flux8tools",
+  "displayName": "Flux8Labs Tools",
+  "url": "https://tools.flux8labs.com",
+  "blogDir": "blog",
+  "format": "html",
+  "saveMode": "raw",
+  "template": "templates/blog-post.html",
+  "listingFiles": [
+    {
+      "path": "blog/index.html",
+      "instruction": "Inside the <div class=\"post-list\" id=\"post-list\"> element, prepend a new <article class=\"post-card reveal\"> block at the top of the list (newest first). Copy the structure of an existing card: include .card-topline with .category-badge and .post-date span, the .post-icon div, an <h2>, a <p class=\"post-excerpt\">, and an <a class=\"open-link\"> pointing to the slug HTML file. When a post is deleted, remove its <article> block and update the total count shown in #result-count."
+    }
+  ],
+  "frontmatterSchema": {},
+  "imageDir": "blog/images",
+  "branch": "main",
+  "description": "A searchable directory of free Flux8Labs browser utilities, AI tools, web scanners, and internal productivity tools.",
+  "generationNotes": "Return raw file source only. Never wrap output in markdown code fences. The first character of the generated file must be the first character of the real source file. Route convention: /blog/{slug}.html — posts live in the /blog/ subdirectory. All asset paths (stylesheet, favicon, images) must use the ../ prefix (e.g. ../styles.css, ../favicon.png, ../blog/images/file.jpg). The <style> block inside each post template provides blog-specific layout styles not present in styles.css — keep it intact. Schema.org type is Article with Organization publisher at https://flux8labs.com/#organization. OG and Twitter card meta tags are required. Primary CTA route: https://tools.flux8labs.com/ (the tools directory home page). The site uses a dark theme; CSS variables are defined in ../styles.css — reuse class names from that file wherever possible (eyebrow, hero-actions span, open-link, footer, topbar, brand, nav-links, etc.). Do not add framework-specific syntax — this is plain HTML."
+}
