@@ -12,13 +12,13 @@ Most tools are browser-first and privacy-first. Wherever possible, files stay on
 
 Free online PDF tools for converting, editing, merging, splitting, and compressing PDF files. GoPDF is built for local, browser-based file handling with no installation and no server uploads for supported workflows.
 
-https://gopdf.run
+https://gopdf.flux8labs.com
 
 ### GoIMG
 
 Free online image tools for optimizing, converting, resizing, cropping, and compressing images. GoIMG supports practical batch workflows and modern output formats like WebP and AVIF while keeping source files on your device.
 
-https://goimg.run
+https://goimg.flux8labs.com
 
 ### GoVid
 
