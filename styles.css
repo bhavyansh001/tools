@@ -714,13 +714,12 @@ h1, h2, h3, p { margin-top: 0; }
 }
 
 .zoro-watermark {
-  right: 8px;
-  bottom: 6px;
-  font-size: clamp(5rem, 6.8vw, 6.75rem);
+  right: -2px;
+  bottom: -12px;
+  font-size: 6.5rem;
   letter-spacing: -0.11em;
-  color: rgba(247,242,232,.03);
-  -webkit-text-stroke: 1px rgba(247,242,232,.2);
-  text-shadow: 0 10px 30px rgba(0,0,0,.3);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(247,242,232,.1);
 }
 
 .lab-card:hover .zoro-watermark {
