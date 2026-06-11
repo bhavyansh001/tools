@@ -941,12 +941,14 @@ h1, h2, h3, p { margin-top: 0; }
   .hero { padding: 130px 0 96px; }
   .hero-title { margin: 0 0 40px; gap: 12px; }
   .hero-eyebrow { margin: 0 0 28px; }
-  .hero-title-top { font-size: clamp(1.4rem, 12vw, 3rem); }
-  .hero-title-fill { font-size: clamp(1.8rem, 15vw, 3.8rem); }
+  .hero-title-top { font-size: clamp(1.0rem, 8.2vw, 3rem); }
+  .hero-title-fill { font-size: clamp(1.4rem, 13vw, 3.8rem); }
   .hero-tagline { font-size: clamp(0.9rem, 3.8vw, 1.1rem); }
   .hero-cta-primary { padding: 15px 26px; font-size: 0.76rem; }
-  .hero-stats { flex-wrap: wrap; gap: 14px; }
+  .hero-stats { flex-wrap: wrap; gap: 8px 20px; }
   .stat-sep { display: none; }
+  .stat-num { font-size: 1.0rem; }
+  .stat-label { font-size: 0.58rem; }
   .tool-grid { grid-template-columns: 1fr; gap: 10px; }
   .tools-section { padding: 88px 0 56px; width: min(100% - 20px, 1280px); }
   .tool-card { padding: 24px 20px; }
@@ -990,13 +992,6 @@ h1, h2, h3, p { margin-top: 0; }
   opacity: 0.28;
 }
 
-/* Wrench: floats left → right near the top */
-.doodle--wrench {
-  top: 80px;
-  color: var(--amber);
-  opacity: 0.18;
-}
-.doodle__spin { display: block; }
 
 @media (prefers-reduced-motion: no-preference) {
   /* cat walk (X) + bob (Y on inner div) */
@@ -1030,17 +1025,6 @@ h1, h2, h3, p { margin-top: 0; }
     100%  { transform: translateY(0)    rotate(360deg) scale(1);    }
   }
 
-  /* wrench float + tumble */
-  .doodle--wrench { animation: wrench-walk 60s linear infinite 8s; }
-  .doodle__spin   { animation: wrench-spin 3.6s linear infinite; }
-  @keyframes wrench-walk {
-    from { transform: translateX(-60px); }
-    to   { transform: translateX(calc(100vw + 60px)); }
-  }
-  @keyframes wrench-spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
