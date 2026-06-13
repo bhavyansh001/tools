@@ -335,11 +335,11 @@ h1, h2, h3, p { margin-top: 0; }
 
 /* Stats row */
 .hero-stats {
-  display: flex; align-items: baseline; gap: 24px;
+  display: flex; align-items: center; gap: 24px;
   padding-top: 32px;
   border-top: 2px solid var(--line);
 }
-.hero-stat { display: flex; align-items: baseline; gap: 9px; }
+.hero-stat { display: flex; align-items: center; gap: 9px; }
 
 .stat-num {
   font-family: var(--font-display);
