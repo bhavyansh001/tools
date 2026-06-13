@@ -335,7 +335,7 @@ h1, h2, h3, p { margin-top: 0; }
 
 /* Stats row */
 .hero-stats {
-  display: flex; align-items: center; gap: 24px;
+  display: flex; align-items: baseline; gap: 24px;
   padding-top: 32px;
   border-top: 2px solid var(--line);
 }
@@ -357,6 +357,7 @@ h1, h2, h3, p { margin-top: 0; }
 .stat-sep {
   display: block; width: 2px; height: 16px;
   background: var(--line); flex-shrink: 0;
+  align-self: center;
 }
 
 /* ══════════════════════════════════════════════════
