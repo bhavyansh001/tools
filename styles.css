@@ -647,6 +647,7 @@ h1, h2, h3, p { margin-top: 0; }
 .tool-icon.ai,
 .tool-icon.zoro   { background: rgba(74,114,160,.10); color: var(--blue);  border-color: rgba(74,114,160,.20); }
 .tool-icon.shield { background: rgba(176,74,64,.10);  color: var(--red);   border-color: rgba(176,74,64,.20); }
+.tool-icon.vault  { background: rgba(201,136,0,.12);  color: var(--amber); border-color: rgba(201,136,0,.22); }
 .tool-icon.slate  { background: rgba(58,138,88,.08);  color: var(--green); border-color: rgba(58,138,88,.17); }
 
 /* Card body */
