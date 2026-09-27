@@ -4,9 +4,11 @@ import { fileURLToPath } from "node:url";
 
 const root = dirname(dirname(fileURLToPath(import.meta.url)));
 const out = join(root, "out");
-const files = ["index.html", "styles.css", "script.js", "favicon.png", "og.webp", "robots.txt", "sitemap.xml"];
+const files = ["index.html", "styles.css", "script.js", "favicon.png", "og.webp", "robots.txt", "sitemap.xml", "blog"];
 
 await rm(out, { recursive: true, force: true });
 await mkdir(out, { recursive: true });
 
-await Promise.all(files.map((file) => cp(join(root, file), join(out, file))));
+await Promise.all(
+  files.map((file) => cp(join(root, file), join(out, file), { recursive: file === "blog" })),
+);
