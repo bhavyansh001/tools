@@ -56,6 +56,18 @@ Flux8Labs' browser-first invoicing and Statement of Work tool. Slate helps manag
 
 https://slate.flux8labs.com
 
+### GoVault
+
+A browser-based personal finance vault with AES-256-GCM encryption, biometric unlock, and local storage for budgets, transactions, accounts, and other financial records.
+
+https://govault.flux8labs.com
+
+### Flux8 UTM
+
+A free campaign URL builder with channel presets, bulk CSV generation, link analysis, and private browser history. Campaign processing happens locally and requires no signup.
+
+https://utm.flux8labs.com
+
 ## Directory Features
 
 - Search tools by name, category, use case, or capability.

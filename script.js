@@ -239,7 +239,7 @@ function initHeroMotion() {
     });
     if (heroTitleTop) heroTitleTop.style.transform = "none";
     if (heroTitleBottom) heroTitleBottom.style.transform = "none";
-    if (statCount) statCount.textContent = "9";
+    if (statCount) statCount.textContent = "10";
     return;
   }
 
@@ -261,7 +261,7 @@ function initHeroMotion() {
   if (statCount) {
     const state = { value: 0 };
     gsap.to(state, {
-      value: 9,
+      value: 10,
       duration: 1.2,
       ease: "power2.out",
       onUpdate: () => {
